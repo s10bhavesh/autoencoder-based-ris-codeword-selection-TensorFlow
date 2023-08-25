@@ -2,4 +2,4 @@
 
 Implementation of the <a href="https://www.techrxiv.org/articles/preprint/Codebook_Design_for_RIS-assisted_Communications/22776533)https://www.techrxiv.org/articles/preprint/Codebook_Design_for_RIS-assisted_Communications/22776533"> paper</a>
 
-![Autoencoder for RIS assisted communication](images/AEpaperDiagram.png)
+![Autoencoder for RIS assisted communication](Images/RIS_intro.png)
