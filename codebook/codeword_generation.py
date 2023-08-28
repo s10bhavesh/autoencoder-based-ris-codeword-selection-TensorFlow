@@ -62,7 +62,6 @@ class CODEBOOK_GENERATION:
         return code_data
 
     def snr_sorting_and_filtering(self):
-
         """
             Sorting the SNR values in descending order and stored it in a \
             dictionary with its index values.
