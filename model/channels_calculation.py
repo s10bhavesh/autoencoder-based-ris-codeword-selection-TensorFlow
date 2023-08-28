@@ -8,7 +8,6 @@ class CHANNELS:
         pass
 
     def Channel_values_generation(self, Eleveation, Azimuth):
-
         """
             Generates the channel values for both, transmitter\
             to RIS and RIS to receiver.    

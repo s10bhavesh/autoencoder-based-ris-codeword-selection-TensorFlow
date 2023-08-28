@@ -6,31 +6,24 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from matplotlib.colors import LinearSegmentedColormap
 
-# Autoencoder = AUTOENCODER()
-
 
 class Train:
     def __init__(self) -> None:
         pass
 
-    def train(self, Training_input, autoencoder):
+    def train(self, Training_input, Autoencoder):
         """ """
         X_train, X_val, y_train, y_val = train_test_split(
             Training_input, Training_input, train_size=0.70
         )
-
-        # print(X_train.dtype, X_val.dtype)
-        # print(y_train.shape, y_val.shape)
 
         x_train = tf.one_hot(X_train, Num_symbols, dtype=tf.float32)
         y_train = tf.one_hot(y_train, Num_symbols, dtype=tf.float32)
 
         x_val = tf.one_hot(X_val, Num_symbols, dtype=tf.float32)
         y_val = tf.one_hot(y_val, Num_symbols, dtype=tf.float32)
-        # print(x_train.dtype)
-        # print(x_train[0].shape, x_val.shape)
-        # print(autoencoder)
-        trained_model = autoencoder.fit(
+
+        trained_model = Autoencoder.fit(
             x_train,
             y_train,
             epochs=45,
